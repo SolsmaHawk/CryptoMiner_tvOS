@@ -7,19 +7,118 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		207A942B232B05D6C1BE7EA5 /* Pods_Crypto_Miner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF3ED7F65D25C223755F694 /* Pods_Crypto_Miner.framework */; };
 		317C6A8B2034EF5B0068EF9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6A8A2034EF5B0068EF9D /* AppDelegate.swift */; };
 		317C6A8D2034EF5B0068EF9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6A8C2034EF5B0068EF9D /* ViewController.swift */; };
 		317C6A902034EF5B0068EF9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317C6A8E2034EF5B0068EF9D /* Main.storyboard */; };
 		317C6A922034EF5B0068EF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317C6A912034EF5B0068EF9D /* Assets.xcassets */; };
+		317C6A9D2034EF9D0068EF9D /* HashContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 317C6A9B2034EF9D0068EF9D /* HashContext.mm */; };
+		317C6AA12034EFC10068EF9D /* Miner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6A9E2034EFC10068EF9D /* Miner.swift */; };
+		317C6AA22034EFC10068EF9D /* MinerStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6A9F2034EFC10068EF9D /* MinerStats.swift */; };
+		317C6AA32034EFC10068EF9D /* MiningError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AA02034EFC10068EF9D /* MiningError.swift */; };
+		317C6AA52034EFCD0068EF9D /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AA42034EFCD0068EF9D /* Client.swift */; };
+		317C6AA72034EFD50068EF9D /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AA62034EFD50068EF9D /* Job.swift */; };
+		317C6AAC2034EFE40068EF9D /* RPCResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AA82034EFE30068EF9D /* RPCResponse.swift */; };
+		317C6AAD2034EFE40068EF9D /* RPCNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AA92034EFE30068EF9D /* RPCNotification.swift */; };
+		317C6AAE2034EFE40068EF9D /* RPCObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AAA2034EFE30068EF9D /* RPCObject.swift */; };
+		317C6AAF2034EFE40068EF9D /* RPCRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AAB2034EFE40068EF9D /* RPCRequest.swift */; };
+		317C6AB92034F0010068EF9D /* aesb.c in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AB02034EFFF0068EF9D /* aesb.c */; };
+		317C6ABA2034F0010068EF9D /* groestl.c in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AB32034F0000068EF9D /* groestl.c */; };
+		317C6ABB2034F0010068EF9D /* blake.c in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AB62034F0000068EF9D /* blake.c */; };
+		317C6ABC2034F0010068EF9D /* cryptonight.c in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AB72034F0000068EF9D /* cryptonight.c */; };
+		317C6AC52034F00A0068EF9D /* oaes_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 317C6ABF2034F0090068EF9D /* oaes_lib.c */; };
+		317C6AC62034F00A0068EF9D /* skein.c in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AC22034F00A0068EF9D /* skein.c */; };
+		317C6AC72034F00A0068EF9D /* keccak.c in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AC42034F00A0068EF9D /* keccak.c */; };
+		317C6ACA2034F0110068EF9D /* jh_ansi_opt64.c in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AC92034F0110068EF9D /* jh_ansi_opt64.c */; };
+		317C6AE32034F0F70068EF9D /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6ACC2034F0F50068EF9D /* Mapper.swift */; };
+		317C6AE42034F0F70068EF9D /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6ACD2034F0F50068EF9D /* ISO8601DateTransform.swift */; };
+		317C6AE52034F0F70068EF9D /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6ACE2034F0F50068EF9D /* DictionaryTransform.swift */; };
+		317C6AE62034F0F70068EF9D /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6ACF2034F0F50068EF9D /* Operators.swift */; };
+		317C6AE72034F0F70068EF9D /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AD02034F0F60068EF9D /* EnumOperators.swift */; };
+		317C6AE82034F0F70068EF9D /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AD12034F0F60068EF9D /* FromJSON.swift */; };
+		317C6AE92034F0F70068EF9D /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AD22034F0F60068EF9D /* DateTransform.swift */; };
+		317C6AEA2034F0F70068EF9D /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AD32034F0F60068EF9D /* EnumTransform.swift */; };
+		317C6AEB2034F0F70068EF9D /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AD42034F0F60068EF9D /* MapError.swift */; };
+		317C6AEC2034F0F70068EF9D /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AD52034F0F60068EF9D /* URLTransform.swift */; };
+		317C6AED2034F0F70068EF9D /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AD62034F0F60068EF9D /* Map.swift */; };
+		317C6AEE2034F0F70068EF9D /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AD72034F0F60068EF9D /* ImmutableMappable.swift */; };
+		317C6AEF2034F0F70068EF9D /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AD82034F0F60068EF9D /* TransformOf.swift */; };
+		317C6AF02034F0F70068EF9D /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AD92034F0F60068EF9D /* DateFormatterTransform.swift */; };
+		317C6AF12034F0F70068EF9D /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6ADA2034F0F60068EF9D /* ToJSON.swift */; };
+		317C6AF22034F0F70068EF9D /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6ADB2034F0F60068EF9D /* HexColorTransform.swift */; };
+		317C6AF32034F0F70068EF9D /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6ADC2034F0F60068EF9D /* TransformOperators.swift */; };
+		317C6AF42034F0F70068EF9D /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6ADD2034F0F70068EF9D /* DataTransform.swift */; };
+		317C6AF52034F0F70068EF9D /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6ADE2034F0F70068EF9D /* IntegerOperators.swift */; };
+		317C6AF62034F0F70068EF9D /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6ADF2034F0F70068EF9D /* CustomDateFormatTransform.swift */; };
+		317C6AF72034F0F70068EF9D /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AE02034F0F70068EF9D /* Mappable.swift */; };
+		317C6AF82034F0F70068EF9D /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AE12034F0F70068EF9D /* NSDecimalNumberTransform.swift */; };
+		317C6AF92034F0F70068EF9D /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C6AE22034F0F70068EF9D /* TransformType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20C541F7CAB7008D2797D951 /* Pods-Crypto Miner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto Miner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crypto Miner/Pods-Crypto Miner.release.xcconfig"; sourceTree = "<group>"; };
+		2CF3ED7F65D25C223755F694 /* Pods_Crypto_Miner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crypto_Miner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		317C6A872034EF5B0068EF9D /* Crypto Miner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Miner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		317C6A8A2034EF5B0068EF9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		317C6A8C2034EF5B0068EF9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		317C6A8F2034EF5B0068EF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		317C6A912034EF5B0068EF9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		317C6A932034EF5B0068EF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317C6A9A2034EF9C0068EF9D /* Crypto Miner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Crypto Miner-Bridging-Header.h"; sourceTree = "<group>"; };
+		317C6A9B2034EF9D0068EF9D /* HashContext.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HashContext.mm; sourceTree = "<group>"; };
+		317C6A9C2034EF9D0068EF9D /* HashContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashContext.h; sourceTree = "<group>"; };
+		317C6A9E2034EFC10068EF9D /* Miner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Miner.swift; sourceTree = "<group>"; };
+		317C6A9F2034EFC10068EF9D /* MinerStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinerStats.swift; sourceTree = "<group>"; };
+		317C6AA02034EFC10068EF9D /* MiningError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiningError.swift; sourceTree = "<group>"; };
+		317C6AA42034EFCD0068EF9D /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		317C6AA62034EFD50068EF9D /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		317C6AA82034EFE30068EF9D /* RPCResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPCResponse.swift; sourceTree = "<group>"; };
+		317C6AA92034EFE30068EF9D /* RPCNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPCNotification.swift; sourceTree = "<group>"; };
+		317C6AAA2034EFE30068EF9D /* RPCObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPCObject.swift; sourceTree = "<group>"; };
+		317C6AAB2034EFE40068EF9D /* RPCRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPCRequest.swift; sourceTree = "<group>"; };
+		317C6AB02034EFFF0068EF9D /* aesb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aesb.c; sourceTree = "<group>"; };
+		317C6AB12034EFFF0068EF9D /* groestl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groestl.h; sourceTree = "<group>"; };
+		317C6AB22034EFFF0068EF9D /* blake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blake.h; sourceTree = "<group>"; };
+		317C6AB32034F0000068EF9D /* groestl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = groestl.c; sourceTree = "<group>"; };
+		317C6AB42034F0000068EF9D /* aesb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesb.h; sourceTree = "<group>"; };
+		317C6AB52034F0000068EF9D /* cryptonight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cryptonight.h; sourceTree = "<group>"; };
+		317C6AB62034F0000068EF9D /* blake.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blake.c; sourceTree = "<group>"; };
+		317C6AB72034F0000068EF9D /* cryptonight.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cryptonight.c; sourceTree = "<group>"; };
+		317C6AB82034F0000068EF9D /* groestl_tables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groestl_tables.h; sourceTree = "<group>"; };
+		317C6ABD2034F0080068EF9D /* keccak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keccak.h; sourceTree = "<group>"; };
+		317C6ABE2034F0090068EF9D /* skein_port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = skein_port.h; sourceTree = "<group>"; };
+		317C6ABF2034F0090068EF9D /* oaes_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oaes_lib.c; sourceTree = "<group>"; };
+		317C6AC02034F0090068EF9D /* oaes_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oaes_lib.h; sourceTree = "<group>"; };
+		317C6AC12034F0090068EF9D /* oaes_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oaes_config.h; sourceTree = "<group>"; };
+		317C6AC22034F00A0068EF9D /* skein.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = skein.c; sourceTree = "<group>"; };
+		317C6AC32034F00A0068EF9D /* skein.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = skein.h; sourceTree = "<group>"; };
+		317C6AC42034F00A0068EF9D /* keccak.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = keccak.c; sourceTree = "<group>"; };
+		317C6AC82034F0100068EF9D /* jh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jh.h; sourceTree = "<group>"; };
+		317C6AC92034F0110068EF9D /* jh_ansi_opt64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jh_ansi_opt64.c; sourceTree = "<group>"; };
+		317C6ACC2034F0F50068EF9D /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		317C6ACD2034F0F50068EF9D /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		317C6ACE2034F0F50068EF9D /* DictionaryTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTransform.swift; sourceTree = "<group>"; };
+		317C6ACF2034F0F50068EF9D /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		317C6AD02034F0F60068EF9D /* EnumOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumOperators.swift; sourceTree = "<group>"; };
+		317C6AD12034F0F60068EF9D /* FromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromJSON.swift; sourceTree = "<group>"; };
+		317C6AD22034F0F60068EF9D /* DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTransform.swift; sourceTree = "<group>"; };
+		317C6AD32034F0F60068EF9D /* EnumTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTransform.swift; sourceTree = "<group>"; };
+		317C6AD42034F0F60068EF9D /* MapError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapError.swift; sourceTree = "<group>"; };
+		317C6AD52034F0F60068EF9D /* URLTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
+		317C6AD62034F0F60068EF9D /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		317C6AD72034F0F60068EF9D /* ImmutableMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImmutableMappable.swift; sourceTree = "<group>"; };
+		317C6AD82034F0F60068EF9D /* TransformOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOf.swift; sourceTree = "<group>"; };
+		317C6AD92034F0F60068EF9D /* DateFormatterTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterTransform.swift; sourceTree = "<group>"; };
+		317C6ADA2034F0F60068EF9D /* ToJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToJSON.swift; sourceTree = "<group>"; };
+		317C6ADB2034F0F60068EF9D /* HexColorTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorTransform.swift; sourceTree = "<group>"; };
+		317C6ADC2034F0F60068EF9D /* TransformOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOperators.swift; sourceTree = "<group>"; };
+		317C6ADD2034F0F70068EF9D /* DataTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransform.swift; sourceTree = "<group>"; };
+		317C6ADE2034F0F70068EF9D /* IntegerOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerOperators.swift; sourceTree = "<group>"; };
+		317C6ADF2034F0F70068EF9D /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		317C6AE02034F0F70068EF9D /* Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
+		317C6AE12034F0F70068EF9D /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		317C6AE22034F0F70068EF9D /* TransformType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
+		750BD6AABABA299F61D81936 /* Pods-Crypto Miner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto Miner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crypto Miner/Pods-Crypto Miner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +126,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				207A942B232B05D6C1BE7EA5 /* Pods_Crypto_Miner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00CD0063846B9D093C421C58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				750BD6AABABA299F61D81936 /* Pods-Crypto Miner.debug.xcconfig */,
+				20C541F7CAB7008D2797D951 /* Pods-Crypto Miner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		317C6A7E2034EF5B0068EF9D = {
 			isa = PBXGroup;
 			children = (
 				317C6A892034EF5B0068EF9D /* Crypto Miner */,
 				317C6A882034EF5B0068EF9D /* Products */,
+				00CD0063846B9D093C421C58 /* Pods */,
+				DF5412BD31DF2CE7FD41B49A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,11 +165,97 @@
 			children = (
 				317C6A8A2034EF5B0068EF9D /* AppDelegate.swift */,
 				317C6A8C2034EF5B0068EF9D /* ViewController.swift */,
+				317C6AFA2034F12B0068EF9D /* CocoaAsyncSocket */,
+				317C6ACB2034F0E10068EF9D /* ObjectMapper */,
+				317C6A992034EF6A0068EF9D /* Crypto */,
 				317C6A8E2034EF5B0068EF9D /* Main.storyboard */,
 				317C6A912034EF5B0068EF9D /* Assets.xcassets */,
 				317C6A932034EF5B0068EF9D /* Info.plist */,
 			);
 			path = "Crypto Miner";
+			sourceTree = "<group>";
+		};
+		317C6A992034EF6A0068EF9D /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				317C6A9C2034EF9D0068EF9D /* HashContext.h */,
+				317C6A9B2034EF9D0068EF9D /* HashContext.mm */,
+				317C6A9A2034EF9C0068EF9D /* Crypto Miner-Bridging-Header.h */,
+				317C6A9E2034EFC10068EF9D /* Miner.swift */,
+				317C6A9F2034EFC10068EF9D /* MinerStats.swift */,
+				317C6AA02034EFC10068EF9D /* MiningError.swift */,
+				317C6AA62034EFD50068EF9D /* Job.swift */,
+				317C6AA42034EFCD0068EF9D /* Client.swift */,
+				317C6AA92034EFE30068EF9D /* RPCNotification.swift */,
+				317C6AAA2034EFE30068EF9D /* RPCObject.swift */,
+				317C6AAB2034EFE40068EF9D /* RPCRequest.swift */,
+				317C6AA82034EFE30068EF9D /* RPCResponse.swift */,
+				317C6AB02034EFFF0068EF9D /* aesb.c */,
+				317C6AB42034F0000068EF9D /* aesb.h */,
+				317C6AB62034F0000068EF9D /* blake.c */,
+				317C6AB22034EFFF0068EF9D /* blake.h */,
+				317C6AB72034F0000068EF9D /* cryptonight.c */,
+				317C6AB52034F0000068EF9D /* cryptonight.h */,
+				317C6AB82034F0000068EF9D /* groestl_tables.h */,
+				317C6AB32034F0000068EF9D /* groestl.c */,
+				317C6AB12034EFFF0068EF9D /* groestl.h */,
+				317C6AC42034F00A0068EF9D /* keccak.c */,
+				317C6ABD2034F0080068EF9D /* keccak.h */,
+				317C6AC12034F0090068EF9D /* oaes_config.h */,
+				317C6ABF2034F0090068EF9D /* oaes_lib.c */,
+				317C6AC02034F0090068EF9D /* oaes_lib.h */,
+				317C6ABE2034F0090068EF9D /* skein_port.h */,
+				317C6AC22034F00A0068EF9D /* skein.c */,
+				317C6AC32034F00A0068EF9D /* skein.h */,
+				317C6AC92034F0110068EF9D /* jh_ansi_opt64.c */,
+				317C6AC82034F0100068EF9D /* jh.h */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		317C6ACB2034F0E10068EF9D /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				317C6ADF2034F0F70068EF9D /* CustomDateFormatTransform.swift */,
+				317C6ADD2034F0F70068EF9D /* DataTransform.swift */,
+				317C6AD92034F0F60068EF9D /* DateFormatterTransform.swift */,
+				317C6AD22034F0F60068EF9D /* DateTransform.swift */,
+				317C6ACE2034F0F50068EF9D /* DictionaryTransform.swift */,
+				317C6AD02034F0F60068EF9D /* EnumOperators.swift */,
+				317C6AD32034F0F60068EF9D /* EnumTransform.swift */,
+				317C6AD12034F0F60068EF9D /* FromJSON.swift */,
+				317C6ADB2034F0F60068EF9D /* HexColorTransform.swift */,
+				317C6AD72034F0F60068EF9D /* ImmutableMappable.swift */,
+				317C6ADE2034F0F70068EF9D /* IntegerOperators.swift */,
+				317C6ACD2034F0F50068EF9D /* ISO8601DateTransform.swift */,
+				317C6AD62034F0F60068EF9D /* Map.swift */,
+				317C6AD42034F0F60068EF9D /* MapError.swift */,
+				317C6AE02034F0F70068EF9D /* Mappable.swift */,
+				317C6ACC2034F0F50068EF9D /* Mapper.swift */,
+				317C6AE12034F0F70068EF9D /* NSDecimalNumberTransform.swift */,
+				317C6ACF2034F0F50068EF9D /* Operators.swift */,
+				317C6ADA2034F0F60068EF9D /* ToJSON.swift */,
+				317C6AD82034F0F60068EF9D /* TransformOf.swift */,
+				317C6ADC2034F0F60068EF9D /* TransformOperators.swift */,
+				317C6AE22034F0F70068EF9D /* TransformType.swift */,
+				317C6AD52034F0F60068EF9D /* URLTransform.swift */,
+			);
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
+		317C6AFA2034F12B0068EF9D /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		DF5412BD31DF2CE7FD41B49A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CF3ED7F65D25C223755F694 /* Pods_Crypto_Miner.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 317C6A962034EF5B0068EF9D /* Build configuration list for PBXNativeTarget "Crypto Miner" */;
 			buildPhases = (
+				FE8F4093245C6CFBF5C89924 /* [CP] Check Pods Manifest.lock */,
 				317C6A832034EF5B0068EF9D /* Sources */,
 				317C6A842034EF5B0068EF9D /* Frameworks */,
 				317C6A852034EF5B0068EF9D /* Resources */,
+				DEFD3FFB4960C5409B036FB3 /* [CP] Embed Pods Frameworks */,
+				567F2F4E1F9FBFB739AB3049 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -93,6 +293,7 @@
 				TargetAttributes = {
 					317C6A862034EF5B0068EF9D = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,13 +328,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		567F2F4E1F9FBFB739AB3049 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crypto Miner/Pods-Crypto Miner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEFD3FFB4960C5409B036FB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Crypto Miner/Pods-Crypto Miner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/NSData+FastHex/NSData_FastHex.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSData_FastHex.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crypto Miner/Pods-Crypto Miner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE8F4093245C6CFBF5C89924 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crypto Miner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		317C6A832034EF5B0068EF9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				317C6AF62034F0F70068EF9D /* CustomDateFormatTransform.swift in Sources */,
+				317C6AEF2034F0F70068EF9D /* TransformOf.swift in Sources */,
+				317C6AB92034F0010068EF9D /* aesb.c in Sources */,
+				317C6AF92034F0F70068EF9D /* TransformType.swift in Sources */,
+				317C6AAD2034EFE40068EF9D /* RPCNotification.swift in Sources */,
+				317C6AE92034F0F70068EF9D /* DateTransform.swift in Sources */,
+				317C6AEB2034F0F70068EF9D /* MapError.swift in Sources */,
+				317C6AAF2034EFE40068EF9D /* RPCRequest.swift in Sources */,
+				317C6AF22034F0F70068EF9D /* HexColorTransform.swift in Sources */,
+				317C6AAE2034EFE40068EF9D /* RPCObject.swift in Sources */,
 				317C6A8D2034EF5B0068EF9D /* ViewController.swift in Sources */,
+				317C6AE82034F0F70068EF9D /* FromJSON.swift in Sources */,
+				317C6AF52034F0F70068EF9D /* IntegerOperators.swift in Sources */,
+				317C6AAC2034EFE40068EF9D /* RPCResponse.swift in Sources */,
+				317C6AC62034F00A0068EF9D /* skein.c in Sources */,
+				317C6AF02034F0F70068EF9D /* DateFormatterTransform.swift in Sources */,
+				317C6ABA2034F0010068EF9D /* groestl.c in Sources */,
+				317C6AA52034EFCD0068EF9D /* Client.swift in Sources */,
+				317C6AF32034F0F70068EF9D /* TransformOperators.swift in Sources */,
+				317C6AF42034F0F70068EF9D /* DataTransform.swift in Sources */,
+				317C6AA22034EFC10068EF9D /* MinerStats.swift in Sources */,
+				317C6ABC2034F0010068EF9D /* cryptonight.c in Sources */,
+				317C6ABB2034F0010068EF9D /* blake.c in Sources */,
+				317C6AF82034F0F70068EF9D /* NSDecimalNumberTransform.swift in Sources */,
+				317C6ACA2034F0110068EF9D /* jh_ansi_opt64.c in Sources */,
+				317C6AF12034F0F70068EF9D /* ToJSON.swift in Sources */,
+				317C6AE52034F0F70068EF9D /* DictionaryTransform.swift in Sources */,
+				317C6AC72034F00A0068EF9D /* keccak.c in Sources */,
+				317C6AA32034EFC10068EF9D /* MiningError.swift in Sources */,
+				317C6AA12034EFC10068EF9D /* Miner.swift in Sources */,
+				317C6AEE2034F0F70068EF9D /* ImmutableMappable.swift in Sources */,
+				317C6AEC2034F0F70068EF9D /* URLTransform.swift in Sources */,
+				317C6AF72034F0F70068EF9D /* Mappable.swift in Sources */,
+				317C6AEA2034F0F70068EF9D /* EnumTransform.swift in Sources */,
+				317C6AED2034F0F70068EF9D /* Map.swift in Sources */,
+				317C6AE62034F0F70068EF9D /* Operators.swift in Sources */,
+				317C6AE32034F0F70068EF9D /* Mapper.swift in Sources */,
+				317C6AE42034F0F70068EF9D /* ISO8601DateTransform.swift in Sources */,
 				317C6A8B2034EF5B0068EF9D /* AppDelegate.swift in Sources */,
+				317C6A9D2034EF9D0068EF9D /* HashContext.mm in Sources */,
+				317C6AA72034EFD50068EF9D /* Job.swift in Sources */,
+				317C6AE72034F0F70068EF9D /* EnumOperators.swift in Sources */,
+				317C6AC52034F00A0068EF9D /* oaes_lib.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,15 +556,20 @@
 		};
 		317C6A972034EF5B0068EF9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 750BD6AABABA299F61D81936 /* Pods-Crypto Miner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38XTM9YA6F;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				INFOPLIST_FILE = "Crypto Miner/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Solsma-Dev.Crypto-Miner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Crypto Miner/Crypto/Crypto Miner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
@@ -274,15 +577,19 @@
 		};
 		317C6A982034EF5B0068EF9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20C541F7CAB7008D2797D951 /* Pods-Crypto Miner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38XTM9YA6F;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				INFOPLIST_FILE = "Crypto Miner/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Solsma-Dev.Crypto-Miner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Crypto Miner/Crypto/Crypto Miner-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};

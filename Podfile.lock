@@ -1,0 +1,15 @@
+PODS:
+  - CocoaAsyncSocket (7.6.2)
+  - NSData+FastHex (1.0.1)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket
+  - NSData+FastHex
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 3541e024f48c54b251638ef72d51dd42808de932
+  NSData+FastHex: a22ad031ee10a4297d0bf4d20cf03406a4476169
+
+PODFILE CHECKSUM: c34a4a6ca1cf0a0c4ccb3b5cbb0a9858ed7fede1
+
+COCOAPODS: 1.4.0
